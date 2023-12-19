@@ -6,7 +6,7 @@ const BlueBoxSubscribe = () => {
           Subscribe To <br className="hidden sm:block" />
            Our Newsletter
         </h2>
-        <p className="text-base sm:text-lg font-Roboto text-light_black font-medium pt-4 text-center">
+        <p className="text-base sm:text-lg font-Roboto text-light_black2 font-medium pt-4 text-center">
           Get weekly food news, articles, and videos delivered to your inbox.
         </p>
         <form className="pt-7">

@@ -4,8 +4,8 @@ import NewsletterPopularPost from "../common/NewsletterPopularPost";
 const Newsletter = () => {
   return (
     <>
-      <div className="container xl:max-w-[1100px] pb-10 pt-14 sm:pt-[170px] px-4 sm:px-8 xl:px-0 mx-auto">
-        <div className="sm:flex lg:pt-[95px]">
+      <div className="container xl:max-w-[1100px] pb-10 pt-[95px] lg:pt-[170px] px-4 sm:px-8 xl:px-0 mx-auto">
+        <div className="sm:flex xl:pt-[95px]">
           <BlueBoxSubscribe/>
           <NewsletterPopularPost />
         </div>
