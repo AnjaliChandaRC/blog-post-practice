@@ -13,7 +13,7 @@ const Header: React.FC = () => {
 
   return (
     <nav className="bg-gray-800">
-      <div className="container xl:max-w-[1100px] pt-10 lg:pt-[64px] px-4 sm:px-8 xl:px-0 mx-auto flex items-center justify-between">
+      <div className="container xl:max-w-[1100px] pt-10 lg:pt-[36px] px-4 sm:px-8 xl:px-0 mx-auto flex items-center justify-between">
         <a href="/">
           <h2 className="font-black font-Merriweather text-blue text-2xl">
             Food Ninja

@@ -1,20 +1,18 @@
+import React from "react";
 import "./App.css";
-import CardsBlog from "./components/CardsBlog";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Newsletter from "./components/Newsletter";
+import BlogPost from "./views/BlogPost";
+import Main from "./views/Main";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      <Header />
-      <Hero />
-      <CardsBlog />
-      <Newsletter />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/blog-post" element={<BlogPost />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
