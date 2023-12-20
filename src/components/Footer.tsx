@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <div className="bg-white_off_2">
+      <div className="bg-white_off_2" id="about">
         <div className="container xl:max-w-[1100px] py-9 px-4 sm:px-8 xl:px-0 mx-auto text-center">
           <div>
             <ul className="flex justify-center items-center">

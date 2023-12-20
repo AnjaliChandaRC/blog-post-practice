@@ -7,18 +7,13 @@ const Newsletter = () => {
   const path = useLocation();
   return (
     <>
-      {/* <div className="container xl:max-w-[1100px] pb-10 pt-[95px] lg:pt-[170px] px-4 sm:px-8 xl:px-0 mx-auto">
-        <div className="sm:flex xl:pt-[95px]">
-          <BlueBoxSubscribe/>
-          <NewsletterPopularPost />
-        </div>
-      </div> */}
       <div
         className={`${
           path.pathname === "/"
             ? "pt-20 sm:pt-32 xl:pt-[266px]"
             : "pt-7 sm:pt-10 lg:pt-[56px]"
         } container pb-[50px] px-4 sm:px-8 xl:px-0 mx-auto`}
+        id="contact"
       >
         <div className="lg:flex">
           <div className="xl:ps-[90px] mx-auto">

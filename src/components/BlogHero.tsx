@@ -5,9 +5,9 @@ const BlogHero = () => {
   return (
     <>
       <div className="container xl:max-w-[1100px] pt-16 xl:pt-[99px] pb-12 px-4 sm:px-8 xl:px-36 mx-auto">
-        <button className="text-sm font-Roboto text-white_off_3 font-medium px-[17px] pt-[3px] pb-1 bg-light_blue rounded-[3px]">
+        <span className="text-sm font-Roboto text-white_off_3 font-medium px-[17px] pt-[5px] pb-[6px] bg-light_blue rounded-[3px]">
           Food Theory
-        </button>
+        </span>
         <h4 className="text-3xl sm:text-4xl lg:text-6xl	font-bold font-Merriweather text-black pt-6 lg:pt-3 !leading-[120%]">
           What I Learned About Life and Food Backpacking Around Greece
         </h4>

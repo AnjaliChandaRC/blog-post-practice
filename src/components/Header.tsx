@@ -21,7 +21,7 @@ const Header: React.FC = () => {
         </a>
         <div className="hidden md:flex items-center">
           <a
-            href="#blog"
+            href="/blog-post"
             className="text-lg font-Roboto text-gray transition-all duration-300 ease-in-out hover:text-black"
             onClick={closeMobileMenu}
           >
@@ -40,7 +40,7 @@ const Header: React.FC = () => {
             Contact
           </a>
           <a
-            href="#log-in"
+            href="#contact"
             className="text-lg font-Roboto text-white rounded-[29px] bg-light_blue pt-[3px] pb-[6px] px-4 ms-5 transition-all duration-300 ease-in-out common_btn"
           >
             Log in
@@ -111,7 +111,7 @@ const Header: React.FC = () => {
                 </a>
               </li>
               <a
-                href="#log-in"
+                href="#contact"
                 className="text-lg font-Roboto text-white rounded-[29px] bg-light_blue pt-[3px] pb-[6px] px-4 mt-3 transition-all duration-300 ease-in-out common_btn"
               >
                 Log in
