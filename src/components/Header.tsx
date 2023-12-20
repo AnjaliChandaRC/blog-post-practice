@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ const Header: React.FC = () => {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
-
+  const path = useLocation();
   return (
     <nav className="bg-gray-800">
       <div className="container xl:max-w-[1100px] pt-10 lg:pt-[36px] px-4 sm:px-8 xl:px-0 mx-auto flex items-center justify-between">
@@ -28,7 +28,9 @@ const Header: React.FC = () => {
         <div className="hidden md:flex items-center">
           <a
             href="/blog-post"
-            className="text-lg font-Roboto text-gray transition-all duration-300 ease-in-out hover:text-black"
+            className={`${
+              path.pathname === "/" ? "text-gray" : "text-blue font-bold"
+            } text-lg font-Roboto transition-all duration-300 ease-in-out hover:text-black`}
             onClick={closeMobileMenu}
           >
             Blog
