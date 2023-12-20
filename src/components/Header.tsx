@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.classList.add("overflow-hidden-while-loading");
+    } else if (!isMobileMenuOpen) {
+      document.body.classList.remove("overflow-hidden-while-loading");
+    }
+  }, [isMobileMenuOpen]);
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
@@ -80,16 +85,14 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div
-          className="md:hidden fixed top-0 left-0 w-full h-full bg-white z-50 flex justify-center items-center transition-all  duration-300"
-          onClick={closeMobileMenu}
-        >
+        <div className="md:hidden fixed top-0 left-0 w-full h-full bg-white z-50 flex justify-center items-center transition-all  duration-300">
           <div className="bg-gray-800 text-black py-4 flex justify-center items-center navbar_custom_height">
             <ul className="flex flex-col items-center animate-fadeIn">
               <li>
                 <a
-                  href="#blog"
+                  href="/blog-post"
                   className="text-lg font-Roboto text-gray transition-all duration-300 ease-in-out hover:text-black"
+                  onClick={closeMobileMenu}
                 >
                   Blog
                 </a>
@@ -98,6 +101,7 @@ const Header: React.FC = () => {
                 <a
                   href="#about"
                   className="text-lg font-Roboto text-gray transition-all duration-300 ease-in-out hover:text-black"
+                  onClick={closeMobileMenu}
                 >
                   About
                 </a>
@@ -106,6 +110,7 @@ const Header: React.FC = () => {
                 <a
                   href="#contact"
                   className="text-lg font-Roboto text-gray transition-all duration-300 ease-in-out hover:text-black"
+                  onClick={closeMobileMenu}
                 >
                   Contact
                 </a>
@@ -113,6 +118,7 @@ const Header: React.FC = () => {
               <a
                 href="#contact"
                 className="text-lg font-Roboto text-white rounded-[29px] bg-light_blue pt-[3px] pb-[6px] px-4 mt-3 transition-all duration-300 ease-in-out common_btn"
+                onClick={closeMobileMenu}
               >
                 Log in
               </a>
