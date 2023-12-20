@@ -12,3 +12,117 @@
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
 }
+
+.common_btn {
+    border: 2px solid transparent;
+}
+.common_btn2 {
+    border: 2px solid transparent;
+}
+
+.common_btn:hover {
+    -webkit-box-shadow: 0 0 17px #283a61;
+    box-shadow: 0 0 17px #283a61;
+    border: 2px solid white;
+}
+.common_btn2:hover {
+    -webkit-box-shadow: 0 0 7px #fff;
+    box-shadow: 0 0 7px #fff;
+    border: 2px solid white;
+}
+
+/* BACK TO TOP CSS START HERE============================== */
+.topscroll {
+    border: 2px solid #fff;
+    background-color: #283a61;
+    -webkit-animation: move 2s ease-in-out infinite;
+    -webkit-animation: up-down 2.5s ease-in-out infinite;
+    animation: up-down 2.5s ease-in-out infinite;
+}
+
+.topscroll:hover {
+    -webkit-box-shadow: 0 0 17px #283a61;
+    box-shadow: 0 0 17px #283a61;
+}
+
+@-webkit-keyframes up-down {
+    50% {
+        -webkit-transform: translateY(-7px);
+        transform: translateY(-7px);
+    }
+}
+
+@keyframes up-down {
+    50% {
+        -webkit-transform: translateY(-7px);
+        transform: translateY(-7px);
+    }
+}
+
+/* PRELOADER CSS START HERE======================= */
+
+.loader-fullscreen {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.loader-fullscreen img {
+    max-width: 120px;
+    width: 100%;
+    -webkit-animation: load-animation 4s ease infinite;
+    animation: load-animation 4s ease infinite;
+}
+
+@-webkit-keyframes load-animation {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes load-animation {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.overflow-hidden-while-loading {
+    overflow: hidden !important;
+    height: 100vh !important;
+}

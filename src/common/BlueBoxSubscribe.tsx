@@ -16,7 +16,7 @@ const BlueBoxSubscribe = () => {
             placeholder="Email"
             className="text-base sm:text-lg font-Roboto text-gray font-medium py-3 px-4 w-full sm:w-[288px] sm:h-[52px] rounded-[3px] placeholder:text-gray focus:outline-none"
           />
-          <button className="text-base sm:text-lg font-Roboto text-white font-medium pt-[7px] pb-3 px-[18px] bg-blue rounded-[3px] mt-6">
+          <button className="text-base sm:text-lg font-Roboto text-white font-medium pt-[7px] pb-3 px-[18px] bg-blue rounded-[3px] mt-6 transition-all duration-300 ease-in-out common_btn2">
             Sign Up
           </button>
         </form>

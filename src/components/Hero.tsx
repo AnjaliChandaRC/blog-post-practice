@@ -14,7 +14,7 @@ const Hero = () => {
           <input
             type="text"
             placeholder="Search for articles"
-            className="w-full focus:outline-none text-lg font-Merriweather text-light_gray placeholder:text-light_gray"
+            className="w-full focus:outline-none text-lg font-Merriweather text-light_gray placeholder:text-light_gray pe-3"
           />
           <div className="cursor-pointer">
             <SearchIcons />

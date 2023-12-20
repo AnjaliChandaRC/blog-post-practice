@@ -5,13 +5,13 @@ const Footer = () => {
         <div className="container xl:max-w-[1100px] py-9 px-4 sm:px-8 xl:px-0 mx-auto text-center">
           <div>
             <ul className="flex justify-center items-center">
-              <li className="text-sm font-Merriweather text-brown transition-all duration-300 ease-in-out hover:text-blue">
+              <li className="text-sm font-Merriweather text-brown transition-all duration-300 ease-in-out hover:text-black">
                 <a href="#about">About</a>
               </li>
-              <li className="text-sm font-Merriweather text-brown px-6 transition-all duration-300 ease-in-out hover:text-blue">
+              <li className="text-sm font-Merriweather text-brown px-6 transition-all duration-300 ease-in-out hover:text-black">
                 <a href="#privacy-policy">Privacy Policy</a>
               </li>
-              <li className="text-sm font-Merriweather text-brown transition-all duration-300 ease-in-out hover:text-blue">
+              <li className="text-sm font-Merriweather text-brown transition-all duration-300 ease-in-out hover:text-black">
                 <a href="#contact">Contact</a>
               </li>
             </ul>

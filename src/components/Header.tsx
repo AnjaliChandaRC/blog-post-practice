@@ -41,7 +41,7 @@ const Header: React.FC = () => {
           </a>
           <a
             href="#log-in"
-            className="text-lg font-Roboto text-white rounded-[29px] bg-light_blue pt-[3px] pb-[6px] px-4 ms-5 transition-all duration-300 ease-in-out hover:opacity-70"
+            className="text-lg font-Roboto text-white rounded-[29px] bg-light_blue pt-[3px] pb-[6px] px-4 ms-5 transition-all duration-300 ease-in-out common_btn"
           >
             Log in
           </a>
@@ -112,7 +112,7 @@ const Header: React.FC = () => {
               </li>
               <a
                 href="#log-in"
-                className="text-lg font-Roboto text-white rounded-[29px] bg-light_blue pt-[3px] pb-[6px] px-4 mt-3"
+                className="text-lg font-Roboto text-white rounded-[29px] bg-light_blue pt-[3px] pb-[6px] px-4 mt-3 transition-all duration-300 ease-in-out common_btn"
               >
                 Log in
               </a>

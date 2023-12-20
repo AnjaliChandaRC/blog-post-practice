@@ -39,13 +39,13 @@ const BlogHero = () => {
             In this article
           </h5>
           <ol className="list-decimal ps-5 pt-4">
-            <li className="text-lg font-Merriweather text-light_brown underline custom__offset">
+            <li className="text-lg font-Merriweather text-light_brown underline custom__offset cursor-pointer transition-all duration-500 ease-in-out hover:no-underline hover:text-blue">
               How to travel without spending a dime
             </li>
-            <li className="text-lg font-Merriweather text-light_brown underline custom__offset pt-4">
+            <li className="text-lg font-Merriweather text-light_brown underline custom__offset cursor-pointer transition-all duration-500 ease-in-out hover:no-underline hover:text-blue pt-4">
               Get the most out of your credit card reward points
             </li>
-            <li className="text-lg font-Merriweather text-light_brown underline custom__offset pt-4">
+            <li className="text-lg font-Merriweather text-light_brown underline custom__offset cursor-pointer transition-all duration-500 ease-in-out hover:no-underline hover:text-blue pt-4">
               Why you don’t need more than 3 pieces of clothing
             </li>
           </ol>

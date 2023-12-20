@@ -1,8 +1,9 @@
+import BackToTop from "../common/BackToTopButton";
 import BlogHero from "../components/BlogHero";
-import BlogNewsletter from "../components/BlogNewsletter";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import KeepReadingBlog from "../components/KeepReadingBlog";
+import Newsletter from "../components/Newsletter";
 
 const BlogPost: React.FC = () => {
   return (
@@ -10,8 +11,9 @@ const BlogPost: React.FC = () => {
       <Header />
       <BlogHero />
       <KeepReadingBlog />
-      <BlogNewsletter />
+      <Newsletter />
       <Footer />
+      <BackToTop />
     </>
   );
 };

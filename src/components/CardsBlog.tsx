@@ -7,7 +7,11 @@ const CardsBlog = () => {
         <div className="lg:flex justify-between">
           {CardsData.map((obj, index) => {
             return (
-              <div key={index} className="lg:w-[47%] pt-12 lg:pt-0">
+              <a
+                href="/blog-post"
+                key={index}
+                className="lg:w-[47%] pt-12 lg:pt-0"
+              >
                 <img src={obj.img} alt="card-img-1" />
                 <div className="flex justify-between flex-col">
                   <div>
@@ -31,7 +35,7 @@ const CardsBlog = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>
