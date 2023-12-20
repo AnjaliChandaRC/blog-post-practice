@@ -10,16 +10,17 @@ const Hero = () => {
         <p className="text-base sm:text-xl font-Roboto text-gray pt-3">
           A blog about food, experiences, and recipes.
         </p>
-        <div className="flex justify-between items-center sm:w-[430px] h-[58px] rounded-md border border-[#DDD] bg-white_off py-5  px-4 sm:px-[28px] mx-auto mt-10 sm:mt-14">
+        <form className="flex justify-between items-center sm:w-[430px] h-[58px] rounded-md border border-[#DDD] bg-white_off py-5  px-4 sm:px-[28px] mx-auto mt-10 sm:mt-14">
           <input
             type="text"
+            id="search"
             placeholder="Search for articles"
             className="w-full focus:outline-none text-lg font-Merriweather text-light_gray placeholder:text-light_gray pe-3"
           />
-          <div className="cursor-pointer">
+          <label htmlFor="search" className="cursor-pointer">
             <SearchIcons />
-          </div>
-        </div>
+          </label>
+        </form>
       </div>
     </>
   );

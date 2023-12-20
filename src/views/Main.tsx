@@ -17,6 +17,9 @@ const Main: React.FC = () => {
       document.body.classList.remove("overflow-hidden-while-loading");
     }, 4000);
   }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       {loading && <Preloader />}

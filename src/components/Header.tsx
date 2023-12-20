@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,11 +20,11 @@ const Header: React.FC = () => {
   return (
     <nav className="bg-gray-800">
       <div className="container xl:max-w-[1100px] pt-10 lg:pt-[36px] px-4 sm:px-8 xl:px-0 mx-auto flex items-center justify-between">
-        <a href="/">
+        <Link to="/">
           <h2 className="font-black font-Merriweather text-blue text-2xl">
             Food Ninja
           </h2>
-        </a>
+        </Link>
         <div className="hidden md:flex items-center">
           <a
             href="/blog-post"

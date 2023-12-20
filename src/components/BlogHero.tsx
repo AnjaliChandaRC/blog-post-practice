@@ -14,7 +14,11 @@ const BlogHero = () => {
         <p className="text-sm font-Merriweather text-dark_gray pt-2">
           Aug 1, 2021 • 7 min read
         </p>
-        <img src={blogImg} alt="blog-img-1" className="pt-4" />
+        <img
+          src={blogImg}
+          alt="blog-img-1"
+          className="mt-4 blog_img_shadow"
+        />
         <div className="flex items-center pt-3 lg:pt-5">
           <img src={authorImg} alt="author-img" />
           <p className="text-sm font-bold font-Merriweather text-black ps-4">
