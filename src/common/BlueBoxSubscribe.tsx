@@ -1,7 +1,7 @@
 const BlueBoxSubscribe = () => {
   return (
     <>
-      <div className="sm:w-[382px] sm:h-[372px] bg-light_blue rounded-[5px] py-[38px] px-4 sm:px-11">
+      <div className="sm:w-[382px] sm:h-[372px] bg-light_blue rounded-[5px] py-[38px] px-4 sm:px-11 mx-auto lg:mx-0">
         <h2 className="text-2xl font-black font-Merriweather text-white text-center">
           Subscribe To <br className="hidden sm:block" />
            Our Newsletter
