@@ -8,14 +8,16 @@ const CardsBlog = () => {
         <div className="md:flex justify-between flex-wrap">
           {CardsData.map((obj, index) => {
             return (
-              <Link to="/blog-post" key={index} className="md:w-[47%]">
+              <Link to="/blog-post" key={index} className="md:w-[47%] group">
                 <div className="flex justify-between flex-col h-full">
-                  <div>
-                    <img
-                      src={obj.img}
-                      alt="card-img-1"
-                      className="pt-12 lg:pt-16"
-                    />
+                  <div className="pt-12 lg:pt-16">
+                    <div className="overflow-hidden rounded-[5px]">
+                      <img
+                        src={obj.img}
+                        alt="card-img-1"
+                        className="group-hover:scale-110 duration-300"
+                      />
+                    </div>
                     <button className="text-sm font-Roboto text-white_off_3 font-medium px-[17px] pt-[3px] pb-1 bg-light_blue rounded-[3px] mt-5">
                       {obj.btnText}
                     </button>
